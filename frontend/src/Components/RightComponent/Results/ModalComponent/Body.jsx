@@ -83,7 +83,7 @@ const Footer=({ImgData,SelectedData,isEditable})=>{
     return(
         <div className='row'>
             <div className='col-md-12 text-center d-flex justify-content-end'>
-                <button className='btn w-50 btn-primary' disabled={!isEditable} onClick={()=>{UpdateNotes(SetLoader,SetResults,Results,SelectedIndex,SelectedData,ImgData)}}>{isEditable ? 'Saving...' : 'Save'}</button>
+                <button className='btn w-50 btn-primary' disabled={!isEditable} onClick={()=>{UpdateNotes(SetLoader,SetResults,Results,SelectedIndex,SelectedData,ImgData)}}>{Loader ? 'Saving...' : 'Save'}</button>
             </div>
         </div>
     )}

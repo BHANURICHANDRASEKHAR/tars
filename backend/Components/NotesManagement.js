@@ -9,7 +9,7 @@ export default app.post('/post',middleware_function,async(req,res)=>{
      try{
          const New_Feed=new Notes({
             caption,
-            Img:ImageLink=='' ? null: ImageLink ,
+            Img:ImageLink=='' ? []: ImageLink ,
            description,
             userId:req.user.id
          })

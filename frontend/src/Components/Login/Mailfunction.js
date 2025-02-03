@@ -27,6 +27,7 @@ export default async function  mailfunction(setLoading,setotpflag,setOtp,data)
       }
         }
         catch(err){
+          console.log(err)
           toast_fail('Server Error')
           
         }
